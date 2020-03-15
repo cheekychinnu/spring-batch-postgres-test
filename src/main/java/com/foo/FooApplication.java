@@ -12,10 +12,10 @@ import java.util.TimeZone;
 @EnableBatchProcessing
 @EnableScheduling
 @EnableRetry
-public class TrigApplication {
+public class FooApplication {
     public static void main(String[] args) {
         TimeZone.setDefault(TimeZone.getTimeZone("EST5EDT"));
-        SpringApplication.run(TrigApplication.class, args);
+        SpringApplication.run(FooApplication.class, args);
     }
 }
 

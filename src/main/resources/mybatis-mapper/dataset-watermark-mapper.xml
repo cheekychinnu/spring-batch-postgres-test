@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.arcesium.trig.dao.mapper.DatasetWatermarkMapper">
+<mapper namespace="com.foo.mapper.DatasetWatermarkMapper">
     <update id="updateWatermark">
         INSERT INTO dataset_watermark (dataset, job_name, job_execution_id, watermark) VALUES
         ( #{dataset}, #{jobName}, #{jobExecutionId}, #{watermark} )

@@ -30,7 +30,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
 @SpringBootTest(
-        classes = {TrigApplication.class, TestConfig.class})
+        classes = {FooApplication.class, TestConfig.class})
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 public class TimezoneTest {
 
