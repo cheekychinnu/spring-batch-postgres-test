@@ -21,6 +21,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 @Configuration
@@ -29,6 +30,9 @@ public class BatchConfiguration extends DefaultBatchConfigurer
 
     @Autowired
     private JobRegistry jobRegistry;
+
+    @Autowired
+    private PersistenceConfiguration persistenceConfiguration;
 
     @Autowired private JobRepository jobRepository;
 
