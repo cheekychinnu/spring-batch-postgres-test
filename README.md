@@ -2,7 +2,8 @@
 
 * Install postgres windows 
 * initdb
-```C:\Users\vino\Downloads\pgsql\bin>initdb -D "C:\Users\vino\Downloads\pgsql\datadir"
+```
+C:\Users\vino\Downloads\pgsql\bin>initdb -D "C:\Users\vino\Downloads\pgsql\datadir"
 The files belonging to this database system will be owned by user "vino".
 This user must also own the server process.
 
